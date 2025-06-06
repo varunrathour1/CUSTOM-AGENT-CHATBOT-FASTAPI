@@ -25,9 +25,12 @@ Welcome to the official setup guide for this project! This walkthrough will help
 Choose one of the following methods based on your preference:
 
 ### 📦 Using Pipenv
-
-1. Install Pipenv:
 ```
+1. Install Pipenv:
+ ```
+
+```
+
 
 pip install pipenv
 
