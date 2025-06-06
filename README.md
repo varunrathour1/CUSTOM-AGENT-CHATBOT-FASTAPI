@@ -1,6 +1,4 @@
-https://github.com/varunrathour1/CUSTOM-AGENT-CHATBOT-FASTAPI/blob/main/AI%20Chatbot%E2%80%93GenAI%20Application%20(Production%20Ready).pdf
-
-```# Project Setup Guide
+# Project Setup Guide
 
 This guide provides step-by-step instructions to set up your project environment, including setting up a Python virtual environment using Pipenv, pip, or conda.
 
