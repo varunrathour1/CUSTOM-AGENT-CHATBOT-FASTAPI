@@ -1,151 +1,98 @@
-Perfect! Here's your **entire GitHub README in a single clean Markdown block**, ready to paste **as-is into your `README.md` file** — no formatting will break, and it works in both VS Code and GitHub Preview.
+```# Project Setup Guide
 
----
+This guide provides step-by-step instructions to set up your project environment, including setting up a Python virtual environment using Pipenv, pip, or conda.
 
-```markdown
-# 🚀 Project Setup Guide
+## Table of Contents
 
-Welcome to the official setup guide for this project! This walkthrough will help you set up your development environment using your preferred Python environment manager (Pipenv, pip+venv, or Conda), and show how to run the different parts of the application.
+1. [Setting Up a Python Virtual Environment](#setting-up-a-python-virtual-environment)
+   - [Using Pipenv](#using-pipenv)
+   - [Using pip and venv](#using-pip-and-venv)
+   - [Using Conda](#using-conda)
+2. [Running the application](#project-phases-and-python-commands)
 
----
 
-## 📚 Table of Contents
+## Setting Up a Python Virtual Environment
 
-- 🛠 Setting Up a Python Virtual Environment
-  - 📦 Using Pipenv
-  - 🐍 Using pip and venv
-  - 🍃 Using Conda
-- 🏃 Running the Application
-- ⚠️ Important Notes
-
----
-
-## 🛠 Setting Up a Python Virtual Environment
-
-Choose one of the following methods based on your preference:
-
-### 📦 Using Pipenv
+### Using Pipenv
+1. **Install Pipenv (if not already installed):**  
 ```
-1. Install Pipenv:
- ```
-
-```
-
-
 pip install pipenv
-
 ```
 
-2. Install project dependencies:
-```
+2. **Install Dependencies with Pipenv:** 
 
+```
 pipenv install
-
 ```
 
-3. Activate the environment:
-```
+3. **Activate the Virtual Environment:** 
 
+```
 pipenv shell
-
 ```
 
 ---
 
-### 🐍 Using pip and venv
-
-1. Create a virtual environment:
+### Using `pip` and `venv`
+#### Create a Virtual Environment:
 ```
-
 python -m venv venv
+```
 
-````
+#### Activate the Virtual Environment:
+**macOS/Linux:**
+```
+source venv/bin/activate
+```
 
-2. Activate the environment:
+**Windows:**
+```
+venv\Scripts\activate
+```
 
-- macOS/Linux:
-  ```
-  source venv/bin/activate
-  ```
-
-- Windows:
-  ```
-  venv\Scripts\activate
-  ```
-
-3. Install dependencies:
-````
-
+#### Install Dependencies:
+```
 pip install -r requirements.txt
-
 ```
 
 ---
 
-### 🍃 Using Conda
-
-1. Create an environment:
+### Using Conda
+#### Create a Conda Environment:
 ```
-
 conda create --name myenv python=3.11
-
 ```
 
-2. Activate the environment:
+#### Activate the Conda Environment:
 ```
-
 conda activate myenv
-
 ```
 
-3. Install dependencies:
+#### Install Dependencies:
 ```
-
 pip install -r requirements.txt
-
 ```
 
----
 
-## 🏃 Running the Application
+# Project Phases and Python Commands
 
-The project is divided into three phases. Run them individually in separate terminals:
-
-### 📌 Phase 1: Create AI Agent
+## Phase 1: Create AI Agent
+```
+python ai_agent.py
 ```
 
-python ai\_agent.py
-
+## Phase 2: Setup Backend with FastAPI
 ```
-
-### ⚙️ Phase 2: Setup Backend with FastAPI
-```
-
 python backend.py
-
 ```
 
-### 💻 Phase 3: Setup Frontend with Streamlit
+## Phase 3: Setup Frontend with Streamlit
 ```
-
 python frontend.py
-
 ```
 
----
+## IMPORTANT
+### Make sure backend python script is running in a separate terminal
 
-## ⚠️ Important Notes
 
-✅ **Ensure the backend (`backend.py`) is running in a separate terminal** before launching the frontend.
 
----
-
-> Made with ❤️ by [YourName or GitHub Username]
-```
-
----
-
-Let me know if you want this:
-
-* Converted into a downloadable `.md` file
-* Customized with your GitHub username, profile picture, social links, or animated badges!
