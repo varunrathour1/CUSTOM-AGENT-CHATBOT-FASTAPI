@@ -1,4 +1,3 @@
-# if you dont use pipenv uncomment the following:
 from dotenv import load_dotenv
 load_dotenv()
 
